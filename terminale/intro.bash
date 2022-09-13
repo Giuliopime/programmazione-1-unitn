@@ -1,4 +1,4 @@
-# Apri terminal Ctrl-Alt-T
+# Apri terminale: Ctrl-Alt-T
 
 # Vedere il manuale di un comando
 man comando
