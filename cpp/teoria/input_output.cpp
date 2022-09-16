@@ -6,14 +6,14 @@ int main() {
     char carattere = 'a';
     /*
         Per usare cout devo usare il namespace std:: oppure includere nel file il codice 'using namespace std;'
-        
+
     */
-    std::cout << carattere; // Stampo in output il valore della variabile c
+    std::cout << carattere << std::endl; // Stampo in output il valore della variabile c
 
     // Ricevo in input un carattere
     char inputCarattere;    // Creo la variabile che conterrà l'input
     std::cin >> inputCarattere;    // Richiedo l'input all'utente
-    std::cout << inputCarattere;    // Stampo l'input ricevuto
+    std::cout << inputCarattere << std::endl;    // Stampo l'input ricevuto
 
     return 0; // La funzione si aspetta un valore di ritorno intero (int)
 }

@@ -10,5 +10,5 @@ int main() {
     std::cin >> fahrenheit;
 
     const float celsius = (fahrenheit - 32) / 1.8;
-    std::cout << celsius; 
+    std::cout << "Conversione in celsius = " << celsius << std::endl;
 }
