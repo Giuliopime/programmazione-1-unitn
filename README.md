@@ -3,3 +3,4 @@ Appunti divisi in:
 - teoria: teoria di c++
 - esercizi svolti in laboratorio
 - esercizi da svolgere in autonomia
+- alcuni comandi utili per il terminale
