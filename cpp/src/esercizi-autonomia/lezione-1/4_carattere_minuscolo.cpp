@@ -1,9 +1,11 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
     char maiuscolo;
-    std::cin >> maiuscolo;
+    cin >> maiuscolo;
 
     char minuscolo = maiuscolo + 32;
-    std::cout << "Carattere  minuscolo relativo ad " << maiuscolo << " = " << minuscolo << std::endl;
+    cout << "Carattere  minuscolo relativo ad " << maiuscolo << " = " << minuscolo << endl;
 }

@@ -1,15 +1,17 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
     int dividendo;
     int divisore;
 
-    std::cin >> dividendo;
-    std::cin >> divisore;
+    cin >> dividendo;
+    cin >> divisore;
 
     int quoziente = dividendo / divisore;
     double resto = dividendo % divisore;
 
-    std::cout << "Quoziente = " << quoziente << std::endl;
-    std::cout << "Resto = " << resto << std::endl;
+    cout << "Quoziente = " << quoziente << endl;
+    cout << "Resto = " << resto << endl;
 }

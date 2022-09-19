@@ -5,8 +5,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 int main() {
     float fahrenheit;   // Uso float perchè in genere le temperature richiedono poche cifre dopo la virgola
     std::cin >> fahrenheit;
