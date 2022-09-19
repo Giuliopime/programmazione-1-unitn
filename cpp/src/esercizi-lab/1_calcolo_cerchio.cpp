@@ -5,6 +5,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 // Dichiaro una costante che contiene il valore di pi greco
 const float PI = 3.14f;
 
