@@ -43,5 +43,8 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#75757513"
     },
-    "editor.rulers": [80]
+    "editor.rulers": [
+        80
+    ],
+    "C_Cpp.errorSquiggles": "Disabled"
 }
