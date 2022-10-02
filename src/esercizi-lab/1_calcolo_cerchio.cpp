@@ -1,5 +1,5 @@
 /*
-    Scrivere un programma che, dato in input il raggio,
+    Scrivere un programma che, dato in input il raggio,diff `which c++` `which g++`
     calcoli l'area e la circonferenza di un cerchio.
 */
 
