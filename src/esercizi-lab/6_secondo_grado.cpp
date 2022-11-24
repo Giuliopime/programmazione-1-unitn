@@ -14,7 +14,7 @@ int main() {
     double delta = b*b - 4ac;
     double sol1 = (-b + sqrt(delta)) / 2a;
 
-    cout << "Soluzione 1: " << sol1 << endl;
+    cout << "Soluzione 2020: " << sol1 << endl;
     if (delta != 0) {
         double sol2 = (-b - sqrt(delta)) / 2a;
         cout << "Soluzione 2: " << sol2 << endl;

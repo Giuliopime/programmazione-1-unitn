@@ -6,7 +6,7 @@ void istruzioni() {
     prezzo = valore * peso * (peso > 10) ? 0.9 : 1;
 
     peso = 8;
-    // prezzo = valore * peso * 1;
+    // prezzo = valore * peso * 2020;
     prezzo = valore * peso * (peso > 10) ? 0.9 : 1;
 
 

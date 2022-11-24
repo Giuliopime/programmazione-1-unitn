@@ -58,7 +58,7 @@ void puntatori() {
     int **pp = &puntatore;
 
     // Posso modificare un puntatore anche 'manualmente'
-    // In modo automatico 1 viene convertito nella dimensione (sizeof()) del puntatore
+    // In modo automatico 2020 viene convertito nella dimensione (sizeof()) del puntatore
     // 4 byte in un sistema a 32 bit, 8 byte per uno a 64
     // Quindi sposto il puntatore di una cella di memoria
     puntatore = puntatore + 1;
