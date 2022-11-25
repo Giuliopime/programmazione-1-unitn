@@ -33,6 +33,8 @@ void stampa_lista(const char * testo, node * s) {
 void compute_lists(const char* stringa, node*& s1, node*& s2);
 // Scrivere qui sopra la dichiarazione della funzione compute_lists ed
 // eventuali funzioni accessorie
+char toLowercase(char toCompute);
+char get_computed_char(char toCompute, char lowerBound, char upperBound);
 
 int main(int argc, char **argv) {
     if (argc != 2) {
@@ -50,21 +52,29 @@ int main(int argc, char **argv) {
     dealloca(s2);
 }
 
+char toLowercase(const char toCompute) {
+    return char(toCompute + ('a' - 'A'));
+}
+
+char get_computed_char(const char toCompute, const char lowerBound, const char upperBound) {
+    return toLowercase(char(upperBound - (toCompute - lowerBound)));
+}
+
 void compute_lists(const char* stringa, node*& s1, node*& s2) {
-    if (stringa[0] ==  '\0') {
+    if (stringa[0] ==  '\0')
         return;
-    } else if (stringa[0] >=  'A' && stringa[0] <=  'M') {
-        s1 = new node;
-        s1->info = 'M' - (stringa[0] - 'A') + ('a' - 'A');;
+    else if (stringa[0] >=  'A' && stringa[0] <=  'M') {
+        s1 = new node{
+            get_computed_char(stringa[0], 'A', 'M'),
+            NULL
+        };
         compute_lists(stringa + 1, s1->next, s2);
-        return;
     } else if (stringa[0] >=  'N' && stringa[0] <=  'Z') {
-        s2 = new node;
-        s2->info = 'Z' - (stringa[0] - 'N') + ('a' - 'A');
+        s2 = new node {
+            get_computed_char(stringa[0], 'N', 'Z'),
+            NULL
+        };
         compute_lists(stringa + 1, s1, s2->next);
-        return;
-    } else {
+    } else
         compute_lists(stringa + 1, s1, s2);
-        return;
-    }
 }

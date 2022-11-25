@@ -17,3 +17,5 @@ add_executable(13_conversione_binario src/esercizi-lab/13_conversione_binario.cp
 add_executable(contaCifre src/esercizi-autonomia/contaCifre.cpp)
 add_executable(main src/simulazioni-esame/2020/1/esercizio1.cc)
 add_executable(esercizio2 src/simulazioni-esame/2020/2/esercizio2.cc)
+add_executable(esercizio3 src/simulazioni-esame/2020/3/esercizio3.cc)
+add_executable(coda src/simulazioni-esame/2020/3/coda.cc)
