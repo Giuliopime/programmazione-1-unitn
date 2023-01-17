@@ -1,0 +1,9 @@
+1) Conversione tra basi
+Leggere un testo assumendo che rappresenta delle info codificate su una certa base, codificare in un'altra base, modificare il contenuto, riconvertirlo e sovrascrivere il file con il nuovo contenuto.
+
+2) Settembre 2022
+
+3) Pile, meccanismo inserire elementi man mano che vengono letti e controllare se dei valori che sono letti soddisfano certe proprieta rispetto a quelle che e' stato letto ed inserire, riuovere a seconda di quello che e' stato letto
+
+Tips:
+- Leggere parole e troncarle ad una certa lunghezza: elemento alla posizione x va messo a '\0'
