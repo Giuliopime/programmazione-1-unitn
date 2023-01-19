@@ -1,0 +1,7 @@
+C++ feels like a new language.
+That is, I can express my ideas more clearly,
+more simply, and more directly in C++11
+Bjarne Stroustrup, The C++ Programming Language (4th Edition)
+than I could in C++98. Furthermore, the resulting
+programs are better checked by the compiler
+and run faster.

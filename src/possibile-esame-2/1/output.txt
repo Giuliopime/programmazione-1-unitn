@@ -1,0 +1,9 @@
+30
+45
+39
+61
+49
+43
+15
+Riga piu lunga (61):
+Bjarne Stroustrup, The C++ Programming Language (4th Edition)
