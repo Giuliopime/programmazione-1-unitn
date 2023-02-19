@@ -1,0 +1,1 @@
+Prendere parola per parola da un file, shiftarla di n posizioni e riscriverla in un altro file.
