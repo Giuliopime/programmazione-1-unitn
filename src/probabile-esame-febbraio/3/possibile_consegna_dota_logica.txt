@@ -1,0 +1,6 @@
+con una il procedimento diventa
+-conta le r che sono una dopo l'altra ed elimina le corrispettive prime occorrenze delle d (incoda le r lette)
+-ogni volta che rimuovi una r incrementi un counter
+-ogni volta che rimuovi una d decrementi un counter
+-ad ogni fine ciclo controlli che il valore assoluto del counter non sià maggiore della dimensione della coda -> finito
+il vincitore è il segno ('-' -> vince r mi sembra, + vince la d)

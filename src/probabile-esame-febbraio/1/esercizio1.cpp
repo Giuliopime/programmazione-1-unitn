@@ -3,44 +3,7 @@
 
 using namespace std;
 
-void shiftASinistra(char* array, int dimensione, int shift) {
-  // Array rotato
-  // Usare new se la dimensione non si sa a priori dell'esecuzione del programma
-  char* shiftato = new char[dimensione];
-  // char shiftato[dimensione];
-
-  // Indice dell'array rotato
-  int indiceShiftato = 0;
-
-  // Prendo dallo shift in poi
-  for (int i = shift; i < dimensione; i++) {
-    shiftato[indiceShiftato] = array[i];
-    indiceShiftato++;
-  }
-
-  // Prendo da 0 allo shift
-  for (int i = 0; i < shift; i++) {
-    shiftato[indiceShiftato] = array[i];
-    indiceShiftato++;
-  }
-
-  // Copio il risultato
-  for (int i = 0; i < dimensione; i++) {
-    array[i] = shiftato[i];
-  }
-
-  delete[] shiftato;
-}
-
-int lunghezzaStringa(char* stringa) {
-  int lunghezza = 0;
-  while (stringa[lunghezza] != '\0') {
-    lunghezza++;
-  }
-
-  return lunghezza;
-}
-
+// Funzioni dal file `operazione_rotazione.cpp` in resources/03_array
 
 int main(int argc, char* argv[]) {
   if (argc != 3) {
@@ -69,9 +32,13 @@ int main(int argc, char* argv[]) {
   const int MAX_LUNGHEZZA_PAROLA = 100;
 
   char parola[MAX_LUNGHEZZA_PAROLA];
+  cout << "opk" << endl;
   while (input >> parola) {
+    cout << "opk" << endl;
     int dimensioneParola = lunghezzaStringa(parola);
-    shiftASinistra(parola, dimensioneParola, shift);
+    cout << dimensioneParola << endl;
+    shiftASinistraAlt(parola, dimensioneParola, shift);
+    cout << parola << endl;
     output << parola << " ";
   }
 

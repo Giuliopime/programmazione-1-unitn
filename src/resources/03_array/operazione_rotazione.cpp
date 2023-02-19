@@ -4,6 +4,9 @@ void shiftASinistra(char* array, int dimensione, int shift) {
   // char* shiftato = new char[dimensione];
   char shiftato[dimensione];
 
+  // In caso shift sia più lungo della dim
+  shift = shift % dimensione;
+
   // Indice dell'array rotato
   int indiceShiftato = 0;
 
@@ -33,6 +36,9 @@ void shiftADestra(char* array, int dimensione, int shift) {
   // char* shiftato = new char[dimensione];
   char shiftato[dimensione];
 
+  // In caso shift sia più lungo della dim
+  shift = shift % dimensione;
+
   // Indice dell'array rotato
   int indiceArray = 0;
 
@@ -54,6 +60,30 @@ void shiftADestra(char* array, int dimensione, int shift) {
   }
 
   // delete[] shiftato;
+}
+
+void shiftADestraAlt(char* array, int dimensione, int shift) {
+  int len = dimensione - 1;
+  int i, j;
+  for(j = 0; j < shift; j++) {
+    for (i = 0; i < len; i++) {
+      char tmp = array[i];
+      array[i] = array[len];
+      array[len] = tmp;
+    }
+  }
+}
+
+void shiftASinistraAlt(char* array, int dimensione, int shift) {
+  int len = dimensione - 1;
+  int i, j;
+  for(j = 0; j < shift; j++) {
+    for (i = len; i>=0; i--) {
+      char tmp = array[i];
+      array[i] = array[len];
+      array[len] = tmp;
+    }
+  }
 }
 
 void printArray(char* array, int dimensione) {
