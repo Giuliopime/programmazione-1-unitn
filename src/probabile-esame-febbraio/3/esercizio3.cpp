@@ -11,6 +11,8 @@ int main() {
   int orario = vincitoreSensoOrario(n, k);
   int anti = vincitoreSensoAntiorario(n, k);
 
+  int test = vincitoreSensoAntiorario(k, n);
+
   std::cout << orario << std::endl;
   std::cout << anti << std::endl;
 

@@ -103,10 +103,6 @@ void estrai_aux(const tree * root, int*& l1, int*& l2, int& indice1, int& indice
     if ((root->info % 2) == 0) {
       l1[indice1] = root->info;
       indice1++;
-
-      // Boh Non ha senso ma può chiedere di ottenere l'ultimo puntatore dell'array
-      // l1[1] = root->info;
-      // l1 = &l1[1];
     } else {
       l2[indice2] = root->info;
       indice2++;
@@ -142,5 +138,6 @@ void estrai(const tree * root, int*& l1, int*& l2) {
 
   // Se vuole l'ultimo elemento?
   // l1 = &l1[dimensione1-1];
+  // l2 = &l2[dimensione2-1];
 }
 // Add here above the definition of estrai
